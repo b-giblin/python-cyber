@@ -1,6 +1,6 @@
 # Author: Brian Giblin
 # Date: 8/16/23
-# Description: Functions used to populate a dictionary in python.
+# Description: Functions used to populate, change and remove within a dictionary in python.
 
 
 # Create an empty list to populate
@@ -55,7 +55,7 @@ def change_quantity():
 # create a function to remove the item from the list
 def remove_item():
     try:
-        index = int(input("Enter the Item Number  "))
+        index = int(input("Enter the Item Number to remove  "))
         inventory_list.pop(index)
     except:
         print("something went wrong")
